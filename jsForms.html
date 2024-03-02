@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <audio autoplay loop> <!-- Elemen audio dengan atribut autoplay dan loop -->
+        <source src="https://github.com/alifichwnt/AudioTesting/raw/main/VOJNarvent_Memory%20Reboot_Piano%20Cover.mp3" type="audio/mpeg"> <!-- Sumber audio -->
+        Your browser does not support the audio element. <!-- Teks alternatif jika browser tidak mendukung audio -->
+    </audio>
+    <div id="container"> <!-- Mulai div kontainer untuk konten -->
+        <h1>Temperature Converter</h1> <!-- Judul utama halaman -->
+        <i>Easy Convert, Easy Life!</i> <!-- Teks deskripsi -->
+        <br><br> <!-- Baris kosong -->
+
+        <form name="form1" action=""> <!-- Mulai formulir konversi suhu -->
+            Temperature: <!-- Label untuk input suhu -->
+            <input type="number" name="temperature" id="temperature" size="10" value="0" /><br /> <!-- Input angka untuk suhu -->
+            <select id="temperature-type"> <!-- Pilihan untuk jenis suhu awal -->
+                <option value="fahrenheit">Fahrenheit</option> <!-- Opsi Fahrenheit -->
+                <option value="kelvin">Kelvin</option> <!-- Opsi Kelvin -->
+                <option value="celcius">Celsius</option> <!-- Opsi Celsius -->
+                <option value="reamur">Reamur</option> <!-- Opsi Reamur -->
+            </select>
+            <br><br> <!-- Baris kosong -->
+
+            Convert to: <!-- Label untuk pilihan konversi -->
+            <select id="output-type"> <!-- Pilihan untuk jenis suhu hasil konversi -->
+                <option value="fahrenheit">Fahrenheit</option> <!-- Opsi Fahrenheit -->
+                <option value="kelvin">Kelvin</option> <!-- Opsi Kelvin -->
+                <option value="celcius">Celsius</option> <!-- Opsi Celsius -->
+                <option value="reamur">Reamur</option> <!-- Opsi Reamur -->
+            </select>
+            <br> <!-- Baris kosong -->
+
+            Result: <!-- Label untuk hasil konversi -->
+            <input type="text" name="output-temperature" id="output-temperature" readonly /><br /> <!-- Hasil konversi yang hanya bisa dibaca -->
+            <input type="button" value="Convert" onclick="processInput()" /> <!-- Tombol untuk mengkonversi suhu -->
+            <input type="button" value="Reset" onclick="resetForm()" /> <!-- Tombol untuk mereset formulir -->
+        </form> <!-- Penutup formulir konversi suhu -->
+
+        <div id="error"></div> <!-- Elemen untuk menampilkan pesan kesalahan -->
+    </div> <!-- Penutup div kontainer -->
+
+    <footer class="footer"> <!-- Awal elemen footer dengan kelas footer -->
+        <p>© 2024 Created by Rizky (<a href="mailto:222212857@stis.ac.id">222212857@stis.ac.id</a>)</p> <!-- Teks kredit pembuat dengan tautan email -->
+    </footer> <!-- Penutup elemen footer -->
+
+    <script src="script.js"></script> <!-- Penautan ke file JavaScript -->
+</body>
+</html>
+
+<!--
+    4. dilakukan perbaikan pada 'onclick' dengan memanggil rumus konversi suhu
+    agar dapat menampilkan nilai konversi dan menambah kode pada function 'FahrenheitToCelcius'
+
+    7. setelah diikuti ketentuan pada nomor 8. dengan menambah fungsi proccessInput,
+    box pada input-an celcius akan memblokir jika diinput selain angka.
+-->

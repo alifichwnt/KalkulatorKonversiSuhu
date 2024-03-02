@@ -1,0 +1,103 @@
+/* Tambahkan efek hover pada latar belakang kontainer */
+#container:hover {
+    transition: background-color 0.3s ease; /* Mengatur efek transisi untuk perubahan warna latar belakang */
+    background-color: rgba(255, 255, 255, 0.95); /* Mengatur warna latar belakang saat elemen dihover */
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis font untuk teks dalam body */
+    background-image: url('https://img.freepik.com/free-photo/finance-accounting-paper-desk-using_1262-2292.jpg?t=st=1709102346~exp=1709105946~hmac=e346418e396af266f7a479233f8f185ff000f94da91caa7aed35a6679f42f3f6&w=740'); /* Menetapkan gambar latar belakang */
+    background-size: cover; /* Mengatur ukuran gambar latar belakang agar menutupi seluruh area */
+    background-position: center; /* Menetapkan posisi gambar latar belakang */
+    display: flex; /* Menetapkan tampilan menjadi flexbox */
+    flex-direction: column; /* Menetapkan arah konten dalam flexbox menjadi vertikal */
+    align-items: center; /* Menetapkan penempatan konten secara horizontal di tengah */
+    justify-content: center; /* Menetapkan penempatan konten secara vertikal di tengah */
+    height: 100vh; /* Menetapkan tinggi elemen menjadi tinggi viewport */
+    transition: opacity 1s ease; /* Efek transisi untuk perubahan opacity */
+}
+
+/* Container styling */
+#container {
+    background-color: rgba(255, 255, 255, 0.8); /* Mengatur warna latar belakang kontainer */
+    padding: 50px; /* Mengatur padding kontainer */
+    border-radius: 20px; /* Mengatur border-radius kontainer */
+    box-shadow: 0 20px rgba(0, 0, 0, 0.1); /* Mengatur bayangan pada kontainer */
+    text-align: center; /* Mengatur penempatan teks menjadi di tengah */
+    opacity: 0.95; /* Mengatur opacity kontainer */
+    transform: translateY(-2%); /* Menggeser kontainer ke atas */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Efek transisi untuk perubahan opacity dan transformasi */
+}
+
+/* Header styling */
+h1 {
+    color: #333; /* Mengatur warna teks */
+}
+
+/* Form styling */
+form {
+    display:flexbox; /* Menetapkan tampilan form menjadi flexbox */
+    flex-direction: column; /* Menetapkan arah konten dalam flexbox menjadi vertikal */
+    margin-top: 1px; /* Mengatur margin atas form */
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 8px; /* Mengatur padding input */
+    margin-top: 10px; /* Mengatur margin atas input */
+    margin-bottom: 10px; /* Mengatur margin bawah input */
+    border: 1px solid #ccc; /* Mengatur border input */
+    border-radius: 5px; /* Mengatur border-radius input */
+}
+
+input[type="button"] {
+    padding: 10px 20px; /* Mengatur padding tombol */
+    background-color: #007bff; /* Mengatur warna latar belakang tombol */
+    color: #fff; /* Mengatur warna teks tombol */
+    border: none; /* Menghapus border tombol */
+    border-radius: 5px; /* Mengatur border-radius tombol */
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat dihover */
+    margin-top: 20px; /* Mengatur margin atas tombol */
+    transition: background-color 0.3s ease; /* Efek transisi untuk perubahan warna latar belakang tombol saat dihover */
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3; /* Mengatur warna latar belakang tombol saat dihover */
+}
+
+/* Error styling */
+#error {
+    color: red; /* Mengatur warna teks error */
+    margin-top: 10px; /* Mengatur margin atas error */
+}
+
+/* Footer styling */
+.footer {
+    background-color: rgba(255, 255, 255, 0.5); /* Mengatur warna latar belakang footer */
+    text-align: center; /* Mengatur penempatan teks menjadi di tengah */
+    padding: 1px; /* Mengatur padding footer */
+    border-radius: 20px; /* Mengatur border-radius footer */
+    position: fixed; /* Membuat posisi footer menjadi fixed */
+    bottom: 0; /* Menempatkan footer di bagian bawah */
+    border-top: 1px solid #ccc; /* Mengatur border atas footer */
+    margin-top: 2; /* Mengatur margin atas footer */
+    width: 50%; /* Mengatur lebar footer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Mengatur bayangan pada footer */
+}
+
+.footer:hover {
+    transition: background-color 0.3s ease; /* Efek transisi untuk perubahan warna latar belakang footer saat dihover */
+    background-color: rgba(255, 255, 255, 0.95); /* Mengatur warna latar belakang footer saat dihover */
+}
+
+.fade-out {
+    opacity: 0.2; /* Mengatur opacity elemen */
+}
